@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './../styles/App.css';
 
 const App = () => {
-  const [name, setName] = useState('');
+  const [n, setName] = useState('');
 
   // Event handler for input change
   const handleNameChange = (event) => {
@@ -16,10 +16,10 @@ const App = () => {
       <input 
         id="nameInput"
         type="text"
-        value={name}
+        value={n}
         onChange={handleNameChange}
       />
-      {name && <p>Hello, {name}!</p>}
+      {name && <p>Hello, {n}!</p>}
     </div>
   )
 }
