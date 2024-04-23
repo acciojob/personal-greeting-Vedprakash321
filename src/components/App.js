@@ -19,8 +19,8 @@ const App = () => {
         value={n}
         onChange={handleNameChange}
       />
-
-      {n && <p>Hello {n}!</p>}
+         <p>{n ? `Hello ${n}! ` : ''}</p>
+     
     </div>
   )
 }
